@@ -56,5 +56,5 @@ jobs:
       - name: Upload github artifact
         uses: actions/upload-artifact@v2
         with:
-          path: '*.deb'
+          path: 'builds/*/*/*.deb'
           name: amqproxy-${{ matrix.image }}.deb
