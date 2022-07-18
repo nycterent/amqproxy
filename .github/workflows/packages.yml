@@ -30,7 +30,6 @@ jobs:
     strategy:
       matrix:
         image: ['ubuntu:focal', 'ubuntu:bionic', 'debian:buster', 'debian:stretch', 'debian:bullseye' ]
-        image: ['ubuntu:focal', 'ubuntu:bionic', 'debian:buster', 'debian:bullseye']
       fail-fast: false
     container:
       image: ${{ matrix.image }}
